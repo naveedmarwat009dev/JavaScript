@@ -17,3 +17,7 @@ console.log(newString2);
 
 const newString3 = gameName.replace("FIFA", "PES");
 console.log(newString3);
+const newString4 = gameName.toUpperCase();
+console.log(newString4);
+const newString5 = gameName.toLowerCase();
+console.log(newString5);
