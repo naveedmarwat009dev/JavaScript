@@ -7,6 +7,8 @@
 // - symbol
 // - bigint
 
+const { useInsertionEffect } = require("react");
+
 //## reference data types(non-primitive data types)
 // array, 
 // object,
@@ -28,3 +30,24 @@ console.log(typeof outsideTemp); // object
    
 //## comparison operators
 // >, <, >=, <=, ==, ===, !=, !==   
+
+// stack(primitive ) and heap (non-primitive) datatypes 
+
+let myYoutubename="Naveed'schannel"
+
+let anothername="codingwithnaveed"
+
+console.log(anothername);
+console.log("Naveed'schannel");
+
+//this user will go into the heap datatypes 
+
+let userOne={
+    email:"naveedmarwat009@gmail.com",
+    upi:"naveed09"
+}
+let userTwo=userOne
+userTwo.email="Marwat009@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
