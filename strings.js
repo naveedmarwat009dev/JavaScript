@@ -7,10 +7,13 @@
 // // template strings
 // let newFullName=` Hello my name is ${name}  and I am a  ${channel}  creator`
 // console.log(newFullName);
-const gameNew= new String("FIFA 2024")
-console.log(gameNew.__proto__);
+const gameName = "FIFA 2024";
 
-console.log(gameNew.toUpperCase());
-console.log(gameNew.toLowerCase()); 
-console.log(gameNew.indexOf(2));
+const newString = gameName.substring(0, 4);
+console.log(newString);
 
+const newString2 = gameName.slice(-8);
+console.log(newString2);
+
+const newString3 = gameName.replace("FIFA", "PES");
+console.log(newString3);
